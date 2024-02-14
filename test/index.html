@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <style>
+      ul {
+        list-style-type: none;
+      }
+      
+      li {
+        display: inline;
+      }
+      
+      a {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #f1f1f1;
+        text-decoration: none;
+        color: #333;
+      }
+      
+      a:hover {
+        background-color: #ddd;
+      }
+
+      h1 {
+        font-size: 500px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="header">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit beatae in unde error omnis laudantium porro aliquid, culpa quia aperiam quis delectus excepturi perferendis ab temporibus optio at, ducimus possimus.
+    </h1>
+    <h1 class="container">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit beatae in unde error omnis laudantium porro aliquid, culpa quia aperiam quis delectus excepturi perferendis ab temporibus optio at, ducimus possimus.
+    </h1>
+    <h1>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit beatae in unde error omnis laudantium porro aliquid, culpa quia aperiam quis delectus excepturi perferendis ab temporibus optio at, ducimus possimus.
+    </h1>
+    <div id="targetElement">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit beatae in unde error omnis laudantium porro aliquid, culpa quia aperiam quis delectus excepturi perferendis ab temporibus optio at, ducimus possimus.
+    </div>
+    <ul>
+      <li id="link1"><a href="#">Кнопка 1</a></li>
+      <li id="link2"><a href="#">Кнопка 2</a></li>
+      <li id="link3"><a href="#">Кнопка 3</a></li>
+    </ul>
+    
+    <script>
+      function scrollToElement(elementSelector, instance = 0) {
+        const elements = document.querySelectorAll(elementSelector);
+        if (elements.length > instance) {
+          elements[instance].scrollIntoView({ behavior: "smooth" });
+        }
+      }
+
+      const link1 = document.getElementById("link1")
+      const link2 = document.getElementById("link2")
+      const link3 = document.getElementById("link3")
+      
+      link1.addEventListener('click', () =>{
+        scrollToElement('.header');
+      })
+    </script>
+  </body>
+</html>

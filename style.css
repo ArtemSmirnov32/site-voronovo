@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100px;
+    display: flex;
+}
+
+img.photo {
+    width: 400px;
+    margin: auto;
+}
+
+img.photo2 {
+    width: 275px;
+    margin: auto;
+
+}
+
+img.nav-logo {
+    width: auto;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: rgb(135, 133, 157);
+}
+
+nav {
+    max-width: 1500px;
+    margin: 0cm;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 2cm;
+
+}
+
+.nav-links {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.nav-links .link {
+    position: relative;
+    display: inline-block;
+    font-size: 24px;
+    color: #ffffff;
+    margin: 10px;
+}
+
+button {
+    background-color: #000000;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+button {
+    font-size: 20px;
+    padding: 1% 2rem;
+    position: relative;
+    padding-bottom: 0.75rem;
+    border-radius: 20px;
+}
+
+button::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #ffffff;
+    transition: all 0.3s ease;
+}
+
+button:hover::after {
+    width: 75%;
+}
+
+.container {
+    padding: 3rem 1rem;
+    font-size: 100px;
+    background-color: rgb(54, 66, 93);
+    display: flex;
+    color: rgb(3, 253, 140);
+    margin: auto;
+}
+
+.nav-bio {
+    background-color: rgb(73, 99, 145);
+    display: flex;
+    align-items: flex-start;
+    font-size: 44px;
+    gap: 0.1rem;
+}
+
+.text {
+    margin: auto;
+    color: #ffffff;
+    font-size: 15px;
+    padding: 1rem 1rem;
+    align-items: flex-start;
+    text-align: left;
+    text-justify: inter-word;
+    line-height: 20px;
+    letter-spacing: normal;
+
+}
+
+.name {
+    color: white;
+}
+
+img.nav-logo {
+    padding: 2rem 3rem;
+    width: 600px;
+    margin: auto;
+}
+
+.text:nth-child(3) {
+    line-height: 25px;
+}
+
+.text:nth-child(4) {
+    line-height: 25px;
+}
+
+.div-bio {
+    font-size: 70px;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(54, 66, 93);
+    color: #ffffff;
+}
+
+.div-arch {
+    font-size: 70px;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(54, 66, 93);
+    color: #ffffff;
+}
+
+.div-lit {
+    font-size: 70px;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(54, 66, 93);
+    color: #ffffff;
+}
+
+.bio-text {
+    margin: auto;
+    background-color: rgb(195, 158, 158);
+    color: black;
+}
+
+.word-list {
+    list-style: none;
+    padding: 0.5rem 10rem;
+    color: rgb(255, 255, 255);
+}
+
+.word-list li {
+    display: inline-block;
+    font-size: 24px;
+    margin: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    border-radius: 10px;
+}
+
+
+.word-list li.active {
+    transform: translateY(-5px);
+    color: blue;
+}
+
+.tab-content {
+    display: flex;
+    margin: auto;
+    position: relative;
+}
+
+.slide-in {
+    animation: slide-in-animation 0.3s;
+}
+
+@keyframes slide-in-animation {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+}
+
+.active {
+    background-color: rgb(54, 66, 93);
+}
+
+.content {
+    margin: 0 auto;
+    text-align: center;
+    line-height: 2rem;
+}
+
+.content p {
+    text-align: center;
+    line-height: 0.7cm;
+}
+
+.photo-collection1 {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1cm;
+    padding: 0rem 0rem;
+    gap: 15rem;
+}
+
+.photo-item {
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    text-align: center;
+}
+
+
+.caption {
+    height: 0rem;
+    margin-top: 5px;
+    text-align: center;
+    margin-left: 1px;
+    font-size: 17px;
+    color: #ffffff;
+}
+
+.photo-collection2 {
+    display: flex;
+    justify-content:safe;
+    margin: 3%;
+    padding-top:17%;
+    gap: 7rem;
+}
+
+.photo-collection3 {
+    display: flex;
+    justify-content:safe;
+    margin: 3rem;
+    padding: 5rem 0rem;
+    gap: 15rem;
+}
