@@ -12,6 +12,17 @@ function scrollToElement(elementSelector, instance = 0) {
   }
 }
 
+function toggleBiography() {
+  var bio = document.querySelector('.biography');
+  if (bio.style.display === 'none') {
+    bio.style.display = 'block';
+    document.querySelector('.show-btn').textContent = 'Свернуть';
+  } else {
+    bio.style.display = 'none';
+    document.querySelector('.show-btn').textContent = 'Развернуть';
+  }
+}
+
 const home = document.getElementById("home");
 const link1 = document.getElementById("link1");
 const link2 = document.getElementById("link2");
@@ -38,23 +49,29 @@ link4.addEventListener("click", () => {
   scrollToElement(".div-bio");
 });
 
-
-
 function showTab(tabId, element) {
   var tabContent = document.getElementById(tabId);
-  var tabs = document.getElementsByClassName("tab-content");
-  for (var i = 0; i < tabs.length; i++) {
-    tabs[i].style.display = "none";
-  }
-  tabContent.style.display = "block";
-  tabContent.classList.add("slide-in");
-  setTimeout(function () {
-    tabContent.classList.remove("slide-in");
-  }, 1000);
 
-  var activeElement = document.querySelector(".word-list .active");
-  if (activeElement) {
-    activeElement.classList.remove("active");
+  if (tabContent.style.display === "block") {
+    tabContent.style.display = "none";
+    element.classList.remove("active");
+  } else {
+    var activeElement = document.querySelector(".word-list .active");
+    if (activeElement) {
+      activeElement.classList.remove("active");
+    }
+
+    var tabs = document.getElementsByClassName("tab-content");
+    for (var i = 0; i < tabs.length; i++) {
+      tabs[i].style.display = "none";
+    }
+
+    tabContent.style.display = "block";
+    tabContent.classList.add("slide-in");
+    setTimeout(function () {
+      tabContent.classList.remove("slide-in");
+    }, 300);
+
+    element.classList.add("active");
   }
-  element.classList.add("active");
 }
