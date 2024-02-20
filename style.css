@@ -62,16 +62,13 @@ nav {
     margin: 10px;
 }
 
-button {
+button{
     background-color: #000000;
     color: white;
     padding: 10px;
     margin: 5px;
     border: none;
     cursor: pointer;
-}
-
-button {
     font-size: 20px;
     padding: 1% 2rem;
     position: relative;
@@ -85,7 +82,7 @@ button::after {
     height: 2px;
     width: 0;
     bottom: 0;
-    left: 0;
+    left: 20px;
     background-color: #ffffff;
     transition: all 0.3s ease;
 }
@@ -178,15 +175,41 @@ img.nav-logo {
     color: black;
 }
 
+.biography {
+    display: none;
+}
+
+.show-btn{
+    background-color: rgb(195, 158, 158);
+    color: white;
+    padding:10px 750px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    transition: none;
+}
+
+.show-btn::after {
+    background-color: rgb(195, 158, 158);
+    transition: none;
+}
+
+.bio-content {
+    margin: auto;
+    padding: 5px 10px;
+    max-width: 1400px;
+}
+
 .word-list {
     list-style: none;
-    padding: 0.5rem 10rem;
+    padding: 0.5rem 2rem;
     color: rgb(255, 255, 255);
 }
 
 .word-list li {
     display: inline-block;
-    font-size: 24px;
+    font-size: 20px;
     margin: 10px;
     cursor: pointer;
     transition: transform 0.3s ease;
@@ -221,7 +244,7 @@ img.nav-logo {
 }
 
 .content {
-    margin: 0 auto;
+    margin: auto;
     text-align: center;
     line-height: 2rem;
 }
@@ -258,15 +281,15 @@ img.nav-logo {
 
 .photo-collection2 {
     display: flex;
-    justify-content:safe;
+    justify-content: safe;
     margin: 3%;
-    padding-top:17%;
+    padding-top: 17%;
     gap: 7rem;
 }
 
 .photo-collection3 {
     display: flex;
-    justify-content:safe;
+    justify-content: safe;
     margin: 3rem;
     padding: 5rem 0rem;
     gap: 15rem;
