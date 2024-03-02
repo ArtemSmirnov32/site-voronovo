@@ -46,8 +46,9 @@ link3.addEventListener("click", () => {
 });
 
 link4.addEventListener("click", () => {
-  scrollToElement(".div-bio");
+  scrollToElement(".div-zeml");
 });
+
 
 function showTab(tabId, element) {
   var tabContent = document.getElementById(tabId);
